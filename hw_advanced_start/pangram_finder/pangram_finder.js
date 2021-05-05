@@ -8,8 +8,8 @@ PangramFinder.prototype.isPangram = function () {
   splitPhrase = splitPhrase.filter((item) => {
     return item != ' ';
   });
-  const answer = splitPhrase.every((item) => {
-    return this.alphabet.includes(item);
+  const answer = this.alphabet.every((item) => {
+    return splitPhrase.includes(item);
   });
   return answer;
 };
