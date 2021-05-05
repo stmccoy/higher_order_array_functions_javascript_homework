@@ -5,7 +5,6 @@ const IsogramFinder = function (word) {
 IsogramFinder.prototype.isIsogram = function () {
     let splitWord = this.word.split('');
     splitWord = splitWord.map((item) => item.toLowerCase());
-    // let splitWordCopy = splitWord.slice();
     const splitWordUniqueChars = [];
     let count = 0;
     splitWord.every((item) =>{
